@@ -109,6 +109,8 @@ export interface DatagridContainerProps {
     showSelectAllToggle: boolean;
     columns: ColumnsType[];
     columnsFilterable: boolean;
+    groupRows: boolean;
+    groupByColumn?: ListAttributeValue<string | Big | boolean | Date>;
     pageSize: number;
     pagination: PaginationEnum;
     pagingPosition: PagingPositionEnum;
@@ -153,6 +155,8 @@ export interface DatagridPreviewProps {
     showSelectAllToggle: boolean;
     columns: ColumnsPreviewType[];
     columnsFilterable: boolean;
+    groupRows: boolean;
+    groupByColumn: string;
     pageSize: number | null;
     pagination: PaginationEnum;
     pagingPosition: PagingPositionEnum;

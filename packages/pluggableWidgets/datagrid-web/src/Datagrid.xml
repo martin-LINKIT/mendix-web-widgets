@@ -211,6 +211,25 @@
                 </property>
             </propertyGroup>
             <propertyGroup caption="Rows">
+                <property key="groupRows" type="boolean" defaultValue="false">
+                    <caption>Group rows</caption>
+                    <description />
+                </property>
+                <property key="groupByColumn" type="attribute" required="false" dataSource="datasource">
+                    <caption>Group by column</caption>
+                    <description>The column to group rows by</description>
+                    <attributeTypes>
+                        <attributeType name="String" />
+                        <attributeType name="AutoNumber" />
+                        <attributeType name="Boolean" />
+                        <attributeType name="DateTime" />
+                        <attributeType name="Enum" />
+                        <attributeType name="Integer" />
+                        <attributeType name="Long" />
+                        <attributeType name="Decimal" />
+                    </attributeTypes>
+                </property>
+
                 <property key="pageSize" type="integer" defaultValue="20">
                     <caption>Page size</caption>
                     <description />
